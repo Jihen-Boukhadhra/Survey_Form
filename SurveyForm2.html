@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="SurveyForm.css">
+      <script src="SurveyForm.js" defer></script>
+</head>
+<body>
+      <div class="container">
+            <div class="logo-section">
+                  <img class="logo" src="Logo.png" alt="survey-form-logo">
+                  <p> <strong> Survey Form</strong></p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <form  action="mailto:jihen.boukhadhra@gmail.com" method="post" enctype="text/plain">
+            <label for="first-name">Your First Name</label>
+                  <input type="text" name="first-name" pattern="^[A-Za-z]{1,15}$" id="first-name" required>
+            <label for="last-name">Your Last Name</label>
+                  <input type="text" name="last-name"  pattern="^[A-Za-z]{1,15}$" id="last-name" required>    
+            <label for="country">Your Coutry</label> 
+                  <input type="text" pattern="^[A-Za-z]{1,15}$" id="country" required>
+            <label >What is Your Current position?</label>
+                  <div>
+                        <select id="option"  name="occupation" required>
+                                  <option>Student</option>
+                                  <option>Intern</option>
+                                  <option>Employee</option>
+                        </select>
+                  </div> 
+            <label for="email">Your Email</label>
+                  <input name="email" type="email" id="email" required>
+            <div>
+                  <label for="yes_no_radio" id="radio">Do you have any experience with Code Alpha?</label> &nbsp &nbsp 
+                  <input type="radio" name="Experience@Code_Alpha" required>Yes</input>
+                  <input type="radio" name="Experience@Code_Alpha" required>No</input>
+
+            </div>
+            <br>
+            <label >Describe your experience with Code Alpha </label>
+            <textarea id="story" name="Describe_Experience_with_CodeAlpha" rows="5" cols="33" required> </textarea>
+            <br>
+            <button   onclick="submitForm()" class="btn" type="submit"> Submmit
+            </button>
+      </form>
+      </div>
+      <br>
+      <br>
+      <footer align="center">All Rights are @ Jihen Boukhadhra</footer>
+      </div>
+</body>
+</html>

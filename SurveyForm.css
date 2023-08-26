@@ -1,0 +1,124 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  align-self: center;
+  background-color: rgb(126, 193, 229);
+}
+
+body {
+  font-family: 'Hack', monospace;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100%;
+}
+.text-section {
+  max-width: calc(100vw - 40%);
+  margin:2rem auto;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.logo-section {
+  display:flex;
+  justify-content: center;
+  background-color:rgba(128, 194, 212, 0.338);
+}
+
+.logo-section > p {
+  color:rgb(0, 2, 7);
+  font-size:3rem;
+  font-family: 'Norse Bold', sans-serif;
+  margin-top:1.11rem;
+}
+.logo {
+  width:100px;
+  height:100px;
+}
+
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2,200px);
+  gap:2rem;
+  margin-left:5rem;
+}
+
+button , a{
+    background-color: rgba(12, 41, 54, 0.5);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    color: #000002;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .acc-text {
+    text-align: center;
+    padding-top: .8rem;
+    padding-bottom: 1.5rem;
+  }
+
+
+  a:link {
+    color:rgb(17, 10, 10);
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  button:hover ,a:hover {
+    color: rgb(91, 181, 223);
+  }
+
+  .image-source {
+    text-align: center;
+    margin-top:2rem;
+  }
+
+.introduction-text > p {
+  text-align: center;
+  padding-top: 2rem;
+}
+.text-text {
+  text-align: left;
+  margin-bottom:2rem;
+}
+
+input {
+  border:1px solid rgba(0, 0, 10,);
+  border-width: 8px;
+}
+
+input:focus {
+  border: 1px solid rgba(12, 54, 74, 0.3);
+  box-shadow: 2px 2px ;
+}
+
+#first-name:valid, #last-name:valid, #email:valid, #text-area:valid, #phone-number:valid, #option:valid{
+  border:2px solid rgb(146, 20, 131);
+}
+
+form.submitted input:invalid {
+  border: 2px solid rgb(206, 17, 17);
+}
